@@ -1,0 +1,16 @@
+.header {
+  height: 15%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.user-btn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1171d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

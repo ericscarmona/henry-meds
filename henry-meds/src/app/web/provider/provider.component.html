@@ -1,0 +1,22 @@
+<div class="provider">
+  <div>Schedule Shift</div>
+  <mat-form-field>
+    <input
+      matInput
+      [ngxMatDatetimePicker]="picker"
+      placeholder="Choose a date & time"
+      [(ngModel)]="myDatePicker"
+      (dateChange)="dateChange($event)"
+    />
+
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="$any(picker)"
+    ></mat-datepicker-toggle>
+
+    <ngx-mat-datetime-picker
+      #picker
+      [enableMeridian]="true"
+    ></ngx-mat-datetime-picker>
+  </mat-form-field>
+</div>

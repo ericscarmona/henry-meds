@@ -1,0 +1,13 @@
+<div>
+  <div class="header">
+    <button (click)="switchUser()" class="user-btn">Switch User Type</button>
+  </div>
+  <ng-container
+    *ngIf="(user$ | async)?.userType === UserType.PROVIDER; else client"
+  >
+    <app-provider></app-provider>
+  </ng-container>
+  <ng-template #client>
+    <app-client></app-client>
+  </ng-template>
+</div>
